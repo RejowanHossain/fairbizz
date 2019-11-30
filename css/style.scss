@@ -1,0 +1,609 @@
+/*
+  Theme Name: FairBizz
+  Author: Admin
+  Support: admin@gmail.com
+  Description: Restaurent landing page.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. fact
+5. feature
+6. video
+7. how work
+8. price
+9. testimonial
+10. faq
+11. footer
+12. blog
+*/
+
+/* 1. Theme default css */
+
+@import "./default";
+@import "./generic";
+
+// header starts
+.welcome-message {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+
+  a {
+    color: #08237e;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.header-social-icon a {
+  color: #959595;
+  font-size: 14px;
+  margin-left: 15px;
+
+  &:hover {
+    color: #202020;
+  }
+}
+
+.social-border {
+  border-left: 1px solid #d1d1d1;
+}
+
+.single-cta {
+  float: right;
+  margin-left: 90px;
+
+  h3 {
+    color: #007bff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+
+    i {
+      margin-right: 3px;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.theme {
+  background: #0668de;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+
+  a {
+    color: #fff;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    padding: 30px 0;
+    line-height: 1;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 0;
+      background: #08237e;
+      left: 0;
+      bottom: 0;
+      transition: 0.5s;
+
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// submenu{
+.main-menu ul li ul.submenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 200px;
+  transition: 0.5s;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+
+  li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #444;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  a {
+    padding: 15px 20px;
+    color: #444;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+}
+
+.main-menu ul li:hover ul.submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.main-menu ul li ul.submenu li:hover>a {
+  color: #007bff;
+}
+
+// submenu 2
+.main-menu ul li ul.submenu li .submenu {
+  left: 105%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s
+}
+
+.main-menu ul li ul.submenu li:hover>ul.submenu {
+  opacity: 1;
+  visibility: visible;
+  left: 100%;
+}
+
+.quote-btn {
+  text-align: right;
+  margin-top: 12px;
+}
+
+.menu-area {
+  margin-bottom: -76px;
+  position: relative;
+  z-index: 99;
+}
+
+// header ends
+
+// slider starts
+.single-slider {
+  background: url(../img/slider.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.slider-height {
+  min-height: 810px;
+}
+
+.slider-content h2 {
+  font-size: 72px;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1;
+
+  span {
+    color: #007bff;
+  }
+}
+
+.slider-content p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+// slider ends
+
+// Feature starts
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.section-title span {
+  background: #007bff;
+  height: 3px;
+  width: 100px;
+  display: inline-block;
+}
+
+.section-title h4 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #828282;
+}
+
+.about-img img {
+  margin-bottom: 30px;
+}
+
+.about-img h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.about-img p {
+  margin: 0;
+  line-height: 30px;
+}
+
+// feature ends
+
+// service start
+.section-title p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.service-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service-box img {
+  margin-bottom: 30px;
+}
+
+.service-box p {
+  margin: 0px;
+}
+
+// service ends
+
+// video starts
+.video-area {
+  background: url(../img/background-img.png) no-repeat center center;
+  background-size: cover;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 800;
+  }
+}
+
+//  video ends
+// testimonial starts
+.single-testimonial p {
+  font-size: 30px;
+  color: #202020;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.client-info {
+  padding-left: 10px;
+
+  h5 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+// form
+.consultation-form {
+  padding: 70px;
+  background: #007bff;
+  margin-top: -50px;
+  margin-bottom: -50px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  input {
+    height: 50px;
+    width: 100%;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  textarea {
+    height: 225px;
+    width: 100%;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  button {
+    padding: 22px 60px;
+  }
+}
+
+.nice-select {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border-radius: 0;
+  border: 0;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 50px;
+  line-height: 48px;
+  outline: none;
+  padding-left: 16px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+// testimonial ends
+
+// FAQ starts
+.faq-thumb img {
+  margin-left: -100px;
+}
+
+.faq-wrapper .card {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 0cm;
+
+  .card-header {
+    padding: 0;
+    background: none;
+    border-radius: 0;
+
+    &:first-child {
+      border-radius: 0;
+    }
+
+    a {
+      font-size: 18px;
+      color: #333;
+      font-weight: 700;
+      display: block;
+      padding: 20px 30px;
+      text-decoration: none;
+
+      &::after {
+        position: absolute;
+        content: '-';
+        top: 14px;
+        right: 23px;
+        font-size: 25px;
+        font-weight: 700;
+
+      }
+    }
+  }
+}
+
+.faq-wrapper .card-header h5 a.collapsed:after {
+  content: '+';
+}
+
+// FAQ ends
+
+// Blog starts
+.latest-blog-content {
+  padding: 30px;
+
+  h4 {
+    color: #444;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+}
+
+.blog-meta span {
+  font-size: 14px;
+  color: #777;
+  margin-right: 10px;
+
+  a {
+    color: #007bff;
+  }
+}
+
+.read-more {
+  margin-top: 80px;
+
+  a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+// Blog ends
+
+// footer starts
+.footer-bg {
+  background: url(../img/footer-bg.png) no-repeat center center;
+  background-size: cover;
+
+  .footer-area {
+    padding-top: 78px;
+  }
+
+  p {
+    color: #d5d5d5;
+    margin-bottom: 30px;
+  }
+
+  .subscribe-form {
+    position: relative;
+    width: 250px;
+
+    input {
+      width: 100%;
+      height: 40px;
+      background: none;
+      border: 1px solid #7f7f7f;
+      padding: 0 15px;
+      color: #fff;
+
+      :placeholder {
+        color: #999;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      background: none;
+      border: 0;
+      color: #999;
+      width: 40px;
+    }
+  }
+}
+
+.footer-widget h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.footer-widget .footer-link li {
+  margin-bottom: 10px;
+  width: 50%;
+  float: left;
+
+  a {
+    color: #d5d5d5;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  color: #d5d5d5;
+}
+
+.footer-icon span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.footer-icon a {
+  color: #999;
+  margin-right: 10px;
+}
+
+.copyright-border {
+  border-top: 1px solid #4f597c;
+}
+
+.copyright p {
+  color: #d5d5d5;
+  margin: 0;
+}
+
+.footer-menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+
+  a {
+    color: #d5d5d5;
+  }
+}
+
+// footer ends
+
+
+// service-page css
+// header area
+.page-title-area {
+  background: url(../img/about-slider.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 240px;
+  padding-bottom: 140px;
+}
+
+.breadcrumb {
+  border-radius: 0;
+  background: none;
+}
+
+.page-title h2 {
+  font-size: 72px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-item a {
+  color: #fff;
+}
+
+.breadcrumb-item.active {
+  color: #ddd;
+}
+
+.cta-area {
+  background: url(../img/services-cta-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.cta-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.service-box a {
+  color: #666;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 20px;
+}

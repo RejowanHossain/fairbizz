@@ -1,0 +1,177 @@
+/* desktop 1200px */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+/* normal desktop (LG)*/
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header-social-icon a {
+        margin-left: 9px;
+    }
+
+    .slider-height {
+        min-height: 650px;
+    }
+
+    .slider-content h2 {
+        font-size: 56px;
+    }
+
+    .test-info {
+        justify-content: center;
+    }
+
+    .faq-thumb img {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* tablet (MD) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-social-icon a {
+        display: none;
+    }
+
+    .md {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-border {
+        border: none;
+    }
+
+    .welcome-message {
+        margin-left: 19%;
+    }
+
+    .single-cta {
+        margin-left: 26px;
+    }
+
+    .theme {
+        background: none;
+        margin-top: 8%;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        color: #000;
+    }
+
+    .md-center {
+        text-align: center;
+    }
+
+    .about-img p {
+        line-height: 30px;
+        margin-left: 20%;
+    }
+
+    .service-box {
+        margin-bottom: 30px;
+    }
+
+    .test-info {
+        justify-content: center;
+    }
+
+    .faq-thumb img {
+        margin-left: -34px;
+    }
+
+    .blog-thumb img {
+        width: 100%;
+    }
+
+    .read-more {
+        margin-top: 20px;
+    }
+
+    .footer-menu ul li {
+        margin-left: 11px;
+    }
+
+}
+
+/* small mobile (XS) */
+@media (max-width: 767px) {
+    .header-top-area.gray-bg {
+        display: none;
+    }
+
+    .xs-none {
+        display: none;
+    }
+
+    .single-cta {
+        margin-left: 47px;
+    }
+
+    .logo-area {
+        padding-bottom: 80px;
+    }
+
+    .theme {
+        background: none;
+        margin-top: 2%;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        color: #000;
+    }
+
+    .slider-height {
+        min-height: 672px;
+    }
+
+    .slider-content h2 {
+        font-size: 55px;
+        color: #fff;
+        font-weight: 800;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+
+    .md-center {
+        text-align: center;
+    }
+
+    .about-img p {
+        line-height: 30px;
+        margin-left: 20%;
+    }
+
+    .service-box {
+        margin-bottom: 30px;
+    }
+
+    .test-info {
+        justify-content: center;
+    }
+
+    .flx {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .faq-thumb img {
+        display: none;
+    }
+
+    .blog-thumb img {
+        width: 100%;
+    }
+
+    .footer-widget {
+        padding-top: 68px
+    }
+
+    .copyright-area {
+        display: none;
+    }
+
+
+
+}
+
+/* large mobile (SM) */
+@media only screen and (min-width: 520px) and (max-width: 767px) {}
